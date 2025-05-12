@@ -1,0 +1,9 @@
+flask
+feedparser
+requests
+pillow
+apscheduler
+python-dotenv
+sqlalchemy
+openai
+python-telegram-bot==13.15
