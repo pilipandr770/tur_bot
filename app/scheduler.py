@@ -14,7 +14,7 @@ from .image_editor import process_image_from_prompt
 def start_scheduler(app):
     scheduler = BackgroundScheduler(timezone=pytz.timezone('Europe/Kiev'))
 
-    @scheduler.scheduled_job('interval', minutes=3)
+    @scheduler.scheduled_job('interval', minutes=180)
     def job():
         with app.app_context():
             print("🔄 Запуск шедулера: перевірка RSS...")

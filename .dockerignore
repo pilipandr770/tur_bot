@@ -1,0 +1,33 @@
+# Git
+.git
+.gitignore
+
+# Виртуальное окружение
+venv
+.venv
+ENV
+env
+
+# Кэш Python
+__pycache__
+*.py[cod]
+*$py.class
+.pytest_cache
+
+# База данных (будет смонтирована как volume)
+instance/*.db
+
+# Изображения (будет смонтирована как volume)
+static/images/*
+
+# Переменные окружения
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea
+.vscode
+
+# Логи
+*.log
